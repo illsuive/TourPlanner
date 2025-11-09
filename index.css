@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* navBar start */
+
+#NavHeader{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(96, 96, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#Navbar{
+    background-color: rgb(96, 96, 212);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#NavDiv h1{
+    color: white;
+    font-size: 3rem;
+}
+#NavDiv{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+#NavDiv ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;   
+}
+#NavDiv ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#NavDiv ul li a:hover{
+    color: yellow;
+}
+
+/* NavBar end */
+
+/* hero part start */
+#videoDiv{
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+    position: relative;
+}
+#videoDiv video{
+    width: 100%;
+    height: 88vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#TourText{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#TourText h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}   
+#TourText p{
+    font-size: 1.5rem;
+}
+
+#TourText button a{
+    text-decoration: none;
+    color: white;
+}
+
+#TourText button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: rgb(78, 78, 142);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#TourText button:hover{
+    background-color: rgb(43, 129, 168);
+    color: white;
+}
+
+/* hero part end */
+
+/* services part start */
+
+.heading , h1{
+    text-align: center;
+    margin: 60px 0;
+    font-size: 2.5rem;
+}
+
+#Destinations{
+    margin : 70px;
+}
+
+.cardsDiv{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.cards{
+    margin-bottom: 30px;
+    height: 180px;
+     cursor: pointer;
+}
+
+.cards  img {
+    background-color: white;
+    width: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+}
+.cards h2{
+    text-align: center  ;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+
+/* services part end */
+
+/* package part start */
+
+.packageCard{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+
+ .exploreCard img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.exploreCard{
+    width: 350px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+.exploreCard img:hover{
+    transform: scale(1.05);
+}
+
+.exploreCard h6  , .exploreCard h2 {
+    text-align: center;
+    /* margin: 4px auto; */
+    
+} 
+.exploreCard button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: rgb(78, 78, 142);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+}
+.exploreCard button:hover{
+    background-color: rgb(43, 129, 168);
+    color: white;
+}
+
+.exploreCard , button:active{
+    transform: scale(0.98);
+}
+
+/* package part end */
+
+/* testimonial part start */
+
+.testimonialCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 50px;
+    /* border: 2px solid rgb(200, 200, 200); */
+}
+.fa-quote-left{
+    color: rgb(37, 37, 79);
+    font-size: 3rem;
+    margin: 20px;
+    opacity: 0.2;
+}
+.testimonialCard{
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+}
+
+.testimonialCard p{
+    font-style: italic;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+/* testimonial part end */
+
+.formTable{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+.labeldDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;    
+    /* border: 2px solid black; */
+} 
+.labeldDiv input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+    
+.labeldDiv label {
+    font-weight: bold;
+    width: 100px;
+    font-size: 16px;
+}
+
+.formTable button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(78, 78, 142);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.formTable button:hover {
+    background-color: rgb(43, 129, 168);
+}
+
+.labeldDiv select {
+background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}   
+
+.labeldDiv textarea{
+width:100%;
+  min-height: 100px;
+  max-height: 300px;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  resize: vertical;       /* Only allow vertical resizing */
+  transition: border 0.3s;
+  outline: none;
+}
+
+/* form end here  */
+
+/* footer start */
+
+footer{
+    background-color: rgb(96, 96, 212);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#superFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+    /* margin-bottom: 30px; */
+}
+
+#about , #contactInfo , #findUs{
+    width: 25%;
+    margin: 0 auto;
+    line-height: 1.5;
+    /* border: 2px solid rgb(200, 200, 200); */
+}
+
+#quickLink {
+    width: 10%;
+    margin: 0 auto;
+    /* border: 2px solid rgb(200, 200, 200); */
+    line-height: 1.5;
+}
+
+#about h2 , #quickLink h2 , #contactInfo h2 , #findUs h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#about p {
+    line-height: 1.3;
+    text-align: start;
+}
+
+#quickLink ul {
+    list-style: none;
+    padding: 0;
+}
+#quickLink ul li a {
+    text-decoration: none;
+    color: yellow;
+}
+
+#quickLink ul li a:hover {
+    text-decoration: underline;
+}
+
+#contactInfo a {
+    text-decoration: none;
+    color: white;
+}
+
+iframe{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 200px;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TourSite</title>
+</head>
+<body>
+
+    <!-- nav bar start  -->
+
+    <header id="NavHeader">
+        <nav id="Navbar">
+            <div id="NavDiv">
+                <h1>TourPlanner</h1>
+            <ul>
+            <li><a href="/TourSite/index.html">Home</a></li>
+            <li><a href="#Destinations">Destinations</a></li>
+            <li><a href="#explore">Packages</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#formSection">Book Now</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- nav bar end  -->
+
+    <!-- hero part start here  -->
+
+    <section>
+        <div id="videoDiv">
+           <video src="https://www.pexels.com/download/video/3141319/" muted autoplay loop ></video>
+        </div>
+        <div id="TourText">
+            <h1>Welcome to TourPlanner</h1>
+            <p>Your gateway to unforgettable travel experiences. Explore our curated tours and start your adventure today!</p>
+            <button><a href="#explore">Explore here</a></button>
+        </div>
+    </section>
+
+    <!-- hero part end here  -->
+
+    <!-- destination part start here  -->
+
+    <section id="Destinations">
+        <div class="heading">
+            <h1>Popular Destinations</h1>
+        </div class="destinationCards">
+        <div class="cardsDiv">
+            <div class="cards">
+                <img src="https://images.pexels.com/photos/1488315/pexels-photo-1488315.jpeg" alt="Paris">
+                <h2>Paris</h2>
+            </div>
+
+            <div class="cards">
+                <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg"  alt="Paris">
+                <h2>France</h2>
+            </div>
+
+            <div class="cards">
+                <img src="https://images.pexels.com/photos/30987469/pexels-photo-30987469.jpeg"  alt="Paris">
+                <h2>London</h2>
+            </div>
+
+            <div class="cards">
+                <img src="https://images.pexels.com/photos/2104882/pexels-photo-2104882.jpeg"  alt="Paris">
+                <h2>Nepal</h2>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- destination part end here  -->
+
+    <!-- package part start here  -->
+
+      <section id="explore">
+        <div>
+            <h1>Explore packages</h1>
+        </div>
+        <div class="packageCard">
+            <div class="exploreCard">
+            <img src="https://images.pexels.com/photos/34622222/pexels-photo-34622222.jpeg"  alt="south india">
+            <h2>South Korea</h2>
+            <h6>The total cost per person will be Rs. 18,250 on twin sharing basis.</h6>
+            <button>Book Now</button>
+            </div>
+
+            <div class="exploreCard">
+            <img src="https://images.pexels.com/photos/3714923/pexels-photo-3714923.jpeg"  alt="south india">
+            <h2>South India</h2>
+            <h6>Pricing a tour is fundamental but often overlooked by operators.</h6>
+            <button>Book Now</button>
+            </div>
+
+            <div class="exploreCard">
+            <img src="https://images.pexels.com/photos/577269/pexels-photo-577269.jpeg"  alt="south india">
+            <h2>Russia</h2>
+            <h6>Your tour price is made up of costs, both fixed and variable, plus margin.</h6>
+            <button>Book Now</button>
+            </div>
+
+            <div class="exploreCard">
+            <img src="https://images.pexels.com/photos/1080347/pexels-photo-1080347.jpeg"  alt="south india">
+            <h2>China</h2>
+            <h6>The starting price for this historical walking tour is $50 per person.</h6>
+            <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- package part end here  -->
+
+    <article id="Testimonials">
+        <div>
+            <h1>What our customers say</h1>
+        </div>
+        <div class="testimonialCards">
+            <div class="testimonialCard">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>"TourPlanner made my vacation unforgettable! The itinerary was perfect, and the guides were knowledgeable and friendly. Highly recommend!"</p>
+                <h3>- Sarah L.</h3>
+            </div>
+
+            <div class="testimonialCard">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>"I had an amazing experience with TourPlanner. The booking process was smooth, and the accommodations exceeded my expectations. Will book again!"</p>
+                <h3>- Mark D.</h3>
+            </div>
+
+            <div class="testimonialCard">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>"Thanks to TourPlanner, I discovered hidden gems I wouldn't have found on my own. The personalized service made all the difference."</p>
+                <h3>- Emily R.</h3>
+            </div>
+        </div>
+    </article>
+
+    <section id="formSection">
+        <div>
+            <h1>Book your Trip</h1>
+        </div>
+        <div class="formTable">
+            <form action="">
+                <div class="labeldDiv">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                </div>
+                <!--  -->
+                <div class="labeldDiv">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="labeldDiv">
+                <label for="number">Phone No:</label>
+                <input type="number" id="number" name="number" required>
+                </div>
+                <!--  -->
+                <div class="labeldDiv">
+                <label for="destination">Destination:</label>
+                <select name="destination" id="destination">
+                    <option value="paris">Paris</option>
+                    <option value="france">France</option>
+                    <option value="london">London</option>
+                    <option value="nepal">Nepal</option>
+                </select>
+                </div>
+                <!--  -->
+                
+                <div class="labeldDiv">
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+                </div>
+                <!--  -->
+
+                  <!--  -->
+                
+                <div class="labeldDiv">
+                <label for="text">Message :</label>
+               <textarea name="textarea" id="textarea"></textarea>
+                </div>
+                <!--  -->
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- form end here  -->
+
+    <footer>
+        <div id="superFooter">
+            <div id="about">
+                <h2>About TourPlanner</h2   >
+                <p>TourPlanner is dedicated to providing exceptional travel experiences. Our expert team curates personalized tours to ensure every journey is unforgettable.</p>
+            </div>
+
+            <div id="quickLink">
+                <h2>Quick Links</h2>
+                <ul>
+            <li><a href="/TourSite/index.html">Home</a></li>
+            <li><a href="#Destinations">Destinations</a></li>
+            <li><a href="#formSection">Book Now</a></li>
+                </ul>
+            </div>
+
+            
+            <div id="contactInfo">
+                <h2>Contact Us</h2>
+                <div>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <div>
+                   <div> <i class="fa-solid fa-phone"></i> 8882523132</div>
+                    <div><i class="fa-solid fa-envelope"></i> butolagautam721@gmail.com</div>
+                </div>
+            </div>
+
+            <div id="findUs">
+                <h2>Find Us</h2>
+               <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019760033925!2d144.9631583156828!3d-37.81410797975108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577a56094f1dcda!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1619591571340!5m2!1sen!2sus" 
+                width="200" 
+                allowfullscreen="" 
+                oading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
