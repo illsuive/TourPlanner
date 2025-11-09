@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>TourSite</title>
 </head>
 <body>
 
     <!-- nav bar start  -->
 
-    <header id="NavHeader">
-        <nav id="Navbar">
+    <header id="NavHeader" role="banner">
+        <nav id="Navbar" aria-label="main-navigation">
             <div id="NavDiv">
                 <h1>TourPlanner</h1>
             <ul>
@@ -30,14 +34,14 @@
 
     <!-- hero part start here  -->
 
-    <section>
+    <section role="region" aria-label="Home section">
         <div id="videoDiv">
            <video src="https://www.pexels.com/download/video/3141319/" muted autoplay loop ></video>
         </div>
         <div id="TourText">
             <h1>Welcome to TourPlanner</h1>
             <p>Your gateway to unforgettable travel experiences. Explore our curated tours and start your adventure today!</p>
-            <button><a href="#explore">Explore here</a></button>
+            <button><a href="#explore" aria-label="Packages">Explore here</a></button>
         </div>
     </section>
 
@@ -45,7 +49,7 @@
 
     <!-- destination part start here  -->
 
-    <section id="Destinations">
+    <section id="Destinations" role="region" aria-label="destination-section">
         <div class="heading">
             <h1>Popular Destinations</h1>
         </div class="destinationCards">
@@ -77,7 +81,7 @@
 
     <!-- package part start here  -->
 
-      <section id="explore">
+      <section id="explore" role="region" aria-label="package-section">
         <div>
             <h1>Explore packages</h1>
         </div>
@@ -86,35 +90,35 @@
             <img src="https://images.pexels.com/photos/34622222/pexels-photo-34622222.jpeg"  alt="south india">
             <h2>South Korea</h2>
             <h6>The total cost per person will be Rs. 18,250 on twin sharing basis.</h6>
-            <button>Book Now</button>
+            <button aria-label="book button for Korea">Book Now</button>
             </div>
 
             <div class="exploreCard">
             <img src="https://images.pexels.com/photos/3714923/pexels-photo-3714923.jpeg"  alt="south india">
             <h2>South India</h2>
             <h6>Pricing a tour is fundamental but often overlooked by operators.</h6>
-            <button>Book Now</button>
+            <button aria-label="book button for India">Book Now</button>
             </div>
 
             <div class="exploreCard">
             <img src="https://images.pexels.com/photos/577269/pexels-photo-577269.jpeg"  alt="south india">
             <h2>Russia</h2>
             <h6>Your tour price is made up of costs, both fixed and variable, plus margin.</h6>
-            <button>Book Now</button>
+            <button aria-label="book button fir Russia">Book Now</button>
             </div>
 
             <div class="exploreCard">
             <img src="https://images.pexels.com/photos/1080347/pexels-photo-1080347.jpeg"  alt="south india">
             <h2>China</h2>
             <h6>The starting price for this historical walking tour is $50 per person.</h6>
-            <button>Book Now</button>
+            <button aria-label="book button for china">Book Now</button>
             </div>
         </div>
     </section>
 
     <!-- package part end here  -->
 
-    <article id="Testimonials">
+    <article id="Testimonials" role="region" aria-label="testimonial-section">
         <div>
             <h1>What our customers say</h1>
         </div>
@@ -139,12 +143,12 @@
         </div>
     </article>
 
-    <section id="formSection">
+    <section id="formSection" role="form" aria-label="booking-form-section">
         <div>
             <h1>Book your Trip</h1>
         </div>
         <div class="formTable">
-            <form action="">
+            <form method="post" aria-label="booking-form">
                 <div class="labeldDiv">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
