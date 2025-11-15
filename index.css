@@ -64,6 +64,27 @@ body{
     color: yellow;
 }
 
+/* === Media Query for Mobile === */
+
+@media (max-width: 1087px) and (max-width: 1064px) {
+    #Navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+    #NavDiv {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+    #NavDiv ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
+
+
 /* NavBar end */
 
 /* hero part start */
@@ -340,36 +361,41 @@ width:100%;
 
 /* footer start */
 
-footer{
+ footer{
     background-color: rgb(96, 96, 212);
     color: white;
-    text-align: center;
-    padding: 20px 0;
+   padding: 20px;
 }
 
-#superFooter{
+#superFooter {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     margin: 20px;
-    flex-wrap: wrap;
-    /* margin-bottom: 30px; */
+  
 }
 
-#about , #contactInfo , #findUs{
-    width: 25%;
-    margin: 0 auto;
-    line-height: 1.5;
-    /* border: 2px solid rgb(200, 200, 200); */
+#about, #contactInfo, #findUs, #quickLink {
+    flex: 1 1 240px; 
+    margin: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
-#quickLink {
+
+
+
+
+ #quickLink {
     width: 10%;
     margin: 0 auto;
-    /* border: 2px solid rgb(200, 200, 200); */
+   
     line-height: 1.5;
 }
+
 
 #about h2 , #quickLink h2 , #contactInfo h2 , #findUs h2 {
     text-align: center;
@@ -405,4 +431,15 @@ iframe{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     height: 200px;
+} 
+
+
+/* footer End */
+
+.lastLine {
+    background-color: rgb(78, 78, 142);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
 }
